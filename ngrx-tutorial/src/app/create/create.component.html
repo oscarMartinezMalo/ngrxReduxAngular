@@ -1,0 +1,11 @@
+<div class="example-container">
+    <div class="left">
+        <mat-form-field>
+            <input matInput placeholder="name" #name>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="url" #url>
+        </mat-form-field>
+        <button (click)="addTutorial(name.value, url.value)">Add Tutorial</button>
+    </div>
+</div>

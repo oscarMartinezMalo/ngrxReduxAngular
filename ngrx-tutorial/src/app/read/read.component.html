@@ -1,0 +1,10 @@
+<div  class= "left">
+    <h3> Tutotials</h3>
+    <mat-list>
+        <mat-list-item (click)="deleteTutorial(i)" *ngFor="let tutorial of tutorials | async; let i=index"> 
+            <a [href]="tutorial.url" target="_blank">
+                {{ tutorial.name }}
+            </a>
+        </mat-list-item>
+    </mat-list>
+</div>
